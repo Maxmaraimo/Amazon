@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>CocaCola</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        gap: 10px;
+    }
+    .main {
+        background-color: snow;
+        width: 390px;
+        height: 360px;
+        font-size: 13px;
+    }
+    .main:hover img{
+        transform: scale(1.10);
+    }
+    .main img {
+        margin: 10px 20px;
+    }
+
+    .main .first_p {
+        margin: -10px 20px;
+    }
+    .main .star {
+        margin: 10px 20px;
+    }
+    .main .cost {
+        margin: 15px 20px;
+        font-size: 18px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1><img src="/media/drinks/Cola.png" width="180px" height="150px" alt="" /></h1>
+
+  <div class="container">
+
+    <div class="main"><br><br>
+        <img src="/media/drinks/colacherry.png" width="350px" height="130px" alt="" />
+        <br><br>
+        <p class="first_p">Coca-Cola Cherry Coke Soda, 12 Fl Oz (park of 12)</p>
+        <p class="star">⭐⭐⭐⭐⭐ 30,543</p>
+        <b class="cost"><sup>$</sup>23<sup>00</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main"><br>
+        <img src="/media/drinks/cocacolaorg.png" width="350px" height="190px" alt="" />
+        <p class="first_p">Coca-Cola Original, 12Fl oz Cans, 24 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 30,543</p>
+        <b class="cost"><sup>$</sup>23<sup>49</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+    <div class="main">
+        <img src="/media/drinks/cocacolasoda.png" width="330px" height="230px" alt="" />
+        <p class="first_p">Coca-Cola Soda Soft Drink, 12 oz (Pack of 8)</p>
+        <p class="star">⭐⭐⭐⭐⭐ 13,444</p>
+        <b class="cost"><sup>$</sup>13<sup>84</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/colacherry2.png" width="330px" height="250px" alt="" />
+        <p class="first_p">Coca-Cola Cherry 16.9 Fl Oz Bottle, 6 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 3,096</p>
+        <b class="cost"><sup>$</sup>12<sup>98</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/colacherry3.png" width="350px" height="230px" alt="" />
+        <p class="first_p">Coca-Cola Cherry 7.5 Fl Oz Cans, 10 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 30,543</p>
+        <b class="cost"><sup>$</sup>16<sup>94</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/colacherr4.png" width="350px" height="230px" alt="" />
+        <p class="first_p">Coca-Cola Cherry Vanilla 12 Fl Oz Cans, 12 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 643</p>
+        <b class="cost"><sup>$</sup>18<sup>21</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+
+  </div>
+{% endblock %}

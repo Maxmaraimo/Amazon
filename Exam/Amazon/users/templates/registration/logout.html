@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Logged out</title>
+{% endblock %}
+
+{% block style %}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .loader-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  .image {
+    position: relative;
+    height: 100vh;
+  }
+  .center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+
+  .number {
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #111;
+  }
+</style>
+{% endblock %}
+
+{% block auth_content %}
+<br><br>
+
+<div class="loader-container">
+  <div id="image" class="image">
+
+    <div class="container">
+      <img src="/media/pngwing.png" width="170px" height="130px" alt="" />
+      <h1>Logged out successfully</h1>
+      <hr>
+      <div class="mb-5">
+          <small class="text-muted">
+              Login again
+              <a href="{% url 'login' %}">
+                  Login
+              </a>
+          </small>
+      </div>
+    </div>
+    
+  </div>
+  <div id="number" class="number center">0</div>
+</div>
+
+
+{% block script %}
+<script>
+const imageElement = document.getElementById("image");
+const numberElement = document.getElementById("number");
+let count = 0;
+const maxCount = 100;
+
+const incrementLoader = () => {
+  //Check if count is less than maxCount
+  if (count < maxCount) {
+    count++;
+    //Update the text content of numberElement with the current count
+    numberElement.textContent = count + "%";
+    //Calculate the opacity as ratio of count to maxCount
+    const opacity = count / maxCount;
+    imageElement.style.opacity = opacity;
+    //Set a blue filter on imageElement with an amount that decreases as opacity increases
+    imageElement.style.filter = `blue($(10 - 10 * opacity)px)`;
+  } else if (count === maxCount) {
+    clearInterval(loaderInterval);
+    numberElement.textContent = "";
+  }
+};
+
+const loaderInterval = setInterval(incrementLoader, 60);
+</script>
+
+{% endblock %}
+
+{% endblock %}

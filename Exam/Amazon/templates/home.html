@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Home</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    body {
+      background-color: black;
+    }
+    h1 {
+      text-align: center;
+    }
+    .first_product {
+      display: grid;
+      grid-template-columns: repeat(4,300px);
+      gap: 10px;
+    }
+    .first_prd {
+      background-color: snow;
+      width: 300px;
+      height: 375px;
+      padding: 5px;
+      margin: 10px 15px;
+    }
+    .first_prd .ch_first_prd {
+      margin: 20px 10px;
+    }
+
+
+
+    .wrapper {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      width: 100%;
+      margin: -40px 60px;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 400px;
+      justify-content: start;
+    }
+    
+    .card {
+      align-items: flex-end;
+      background-size: cover;
+      border-radius: .75rem;
+      border-radius: 2rem;
+      box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+      cursor: pointer;
+      display: flex;
+      margin: 0 10px;
+      overflow: hidden;
+      transition: .6s cubic-bezier(.28,-0.03,0,.99);
+      width: 80px;
+    }
+    
+    .card > .row {
+      color: white;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .card > .row > .icon {
+      align-items: center;
+      background: #223;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+      width: 50px;
+    }
+    
+    .card > .row > .description {
+      display: flex;
+      flex-direction: column;
+      height: 80px;
+      justify-content: center;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(30px);
+      transition: all .3s ease;
+      transition-delay: .3s;
+      width: 520px;
+    }
+    
+    .description p {
+      color: #b0b0ba;
+      padding-top: 5px;
+    }
+    
+    .description h4 {
+      text-transform: uppercase;
+    }
+    
+    input {
+      display: none;
+    }
+    
+    input:checked + label {
+      width: 600px;
+    }
+    
+    input:checked + label .description {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    
+    .card[for="c1"] {
+      background-image: url('/media/amzz1.png');
+      background-size: cover;
+    }
+    
+    .card[for="c2"] {
+      background-image: url('/media/amzz2.png');
+    }
+    
+    
+    .card[for="c3"] {
+      background-image: url('/media/amzz3.png');
+    }
+    
+    .card[for="c4"] {
+      background-image: url('/media/amzz4.png');
+    }
+    
+  </style>
+{% endblock %}
+
+{% block content %}
+<h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+Welcome to Websait  <img src="/media/pngwing.png" width="170px" height="100px" alt="" />
+</h1>
+        
+
+  <div class="first_product">
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3>Deals in PCs </h3>
+        <img src="/media/Аннотация 2023-11-12 223429.png" width="270px" height="240px" alt="" />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        <p>255 $</p>
+      </div>
+    </div>
+
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h4>Gaming accessories</h4>
+        <img src="/media/productpc.png" width="270px" height="240px" alt="" />
+        <br />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'see_more' %}">See more</a>
+      </div>
+    </div>
+
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3>Small gifts </h3>
+        <img src="/media/amazon_prd.png" width="270px" height="240px" alt="" />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        <p>20 $</p>
+      </div>
+    </div>
+
+
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3>Toys cute </h3>
+        <img src="/media/toys.png" width="270px" height="240px" alt="" />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        <p>25 $</p>
+      </div>
+    </div>
+    
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3 style="font-size: 20px;">Fashion trends you like </h3>
+        <img src="/media/fashion.png" width="270px" height="240px" alt="" />
+        <br />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'explore_more' %}">Explore more</a>
+      </div>
+    </div>
+
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3 style="font-size: 20px;">Refresh your space </h3>
+        <img src="/media/fashion_2.png" width="270px" height="240px" alt="" />
+        <br />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'see_more' %}">See more</a>
+      </div>
+    </div>
+
+    
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3 style="font-size: 20px;">Shop deals in Fashion </h3>
+        <img src="/media/fashion_3.png" width="270px" height="240px" alt="" />
+        <br />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'see_all_deals' %}">See all deals</a>
+      </div>
+    </div>
+    
+    <div class="first_prd">
+      <div class="ch_first_prd">
+        <h3 style="font-size: 20px;">Shop deals in Fashion </h3>
+        <img src="/media/sec_product.png" width="270px" height="240px" alt="" />
+        <br />
+        <br />
+        <a style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="wrapper">
+    <div class="container">
+      <input type="radio" name="slide" id="c1" checked>
+      <label for="c1" class="card">
+        <div class="row">
+          <div class="icon">1</div>
+          <div class="description">
+            <h4>Amazon</h4>
+            <p>Fast delivery and big discounts</p>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c2">
+      <label for="c2" class="card">
+        <div class="row">
+          <div class="icon">2</div>
+          <div class="description">
+            <h4>Payment</h4>
+            <p>Convenient payment methods upon availability or upon receip</p>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c3">
+      <label for="c3" class="card">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="description">
+            <h4>Delivery</h4>
+            <p>Delivery is fast and convenient</p>
+          </div>
+        </div>
+      </label>
+
+      <input type="radio" name="slide" id="c4">
+      <label for="c4" class="card">
+        <div class="row">
+          <div class="icon">4</div>
+          <div class="description">
+            <h4>Product</h4>
+            <p>The goods will arrive safe and healthy</p>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+
+  
+{% endblock %}

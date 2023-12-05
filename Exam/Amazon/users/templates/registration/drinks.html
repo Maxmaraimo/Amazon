@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Drinks</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        gap: 10px;
+    }
+    .main {
+      background-color: snow;
+      width: 390px;
+      height: 250px;
+    }
+    .main .img_center {
+      margin: -25px 115px;
+    }
+
+    .main .img_center_p {
+      margin: -15px 150px;
+    }
+    .main .img_center_sp {
+      margin: -30px 145px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Drinks</h1>
+
+  <div class="container">
+
+   
+
+    <div class="main">
+      <img src="/media/drinks/CocaCola.png" width="390px" height="195px" alt="" />
+      <a href="{% url 'CocaCola' %}"><img src="/media/drinks/Cola.png" width="150px" height="110px" alt="" class="img_center" /></a>
+    </div>
+    <div class="main">
+      <img src="/media/drinks/pepsi.png" width="390px" height="195px" alt="" />
+      <a href="{% url 'Pepsi' %}"><img src="/media/drinks/epsi.png" width="70px" height="70px" alt="" class="img_center_p" /></a>
+    </div>
+    <div class="main">
+      <img src="/media/drinks/sprite.png" width="390px" height="195px" alt="" />
+      <a href="{% url 'Sprite' %}"><img src="/media/drinks/pngsprite.png" width="100px" height="100px" alt="" class="img_center_sp" /></a>
+    </div>
+
+
+
+  </div>
+{% endblock %}

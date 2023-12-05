@@ -1,0 +1,424 @@
+{% extends 'base.html' %}
+
+{% block title %}   
+  <title>Toys</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .main {
+        background-color: snow;
+        width: 320px;
+        height: 530px;
+    }
+    .first_p {
+        margin: 10px 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+    }
+    .star {
+        margin: 10px 20px;
+    }
+    .gray {
+        margin: -10px 20px;
+        color: gray;
+        font-size: 12px;
+    }
+    .second_gray {
+        margin: 22px 20px;
+        color: gray;
+    }
+    .cost {
+        
+        margin: -25px 20px;
+    }
+    .costs {
+        
+        margin: -25px 20px;
+        font-size: 20px;
+    }
+    .end {
+        margin: 40px 20px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Toys</h1>
+
+  <div class="container">
+
+    <div class="main">
+        <img src="/media/toys/toys1.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Jada Toys - for Explorer Jurassic Park - 1993-1/32, Green/Red</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">100+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$12.99(2 new offers) 
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+        </p>
+        
+        <p class="end">Ages: 8 years and up</p>
+    </div>
+    
+    <div class="main">
+        <img src="/media/toys/toys2.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Ambulance Toy Truck 15'', Large Toy Cars for Kids, Lights & Sounds Toddler Toy Ambulance with Accessories</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$27.52(3 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys3.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Wolyto Sing: Johnny Large Plush Toy 15"</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">FREE delivery Dec 6 - 21</p>
+        <p class="costs"><sup>$</sup>60 <sup>00</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys4.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Little Live Pets - My Pet Pig: Piggly Soft and Jiggly Interactive Toy Pig That Walks Dances and Nuzzles</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$28.18(15 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 5 - 15 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys5.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Bubble Machine Gun, Bubbles Kids Toys with Thousands Bubbles and Colorful Lights, Pink Outdoor Toys</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$29.99(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys6.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Funko Bitty Pop!: Toy Story Mini Collectible Toys - Jessie, Bullseye, Hamm & Mystery</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">100+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$14.92(8 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys7.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Bitzee, Interactive Toy Digital Pet and Case with 15 Animals Inside, Virtual Electronic Pets React to Touch</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">30K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$22.97(46 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 5 - 15 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys8.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Funko Bitty Pop!: Toy Story Mini Collectible Toys - Forky, Woody, Gabby Gabby & Mystery Chase Figure</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$14.92(9 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys9.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Transformers TRA MV7 BA Combiner 2PK Scourge</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">400+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$19.00(2 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 6 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys10.png" width="320px" height="265px" alt="" />
+        <p class="first_p">MunnyGrubbers - Crystal Dragon Fidget Toy - Heavy Duty XL 26" 3D Printed Flexible Articulating Dragon</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$19.99(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 15 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys11.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Tabby Stuffed Animal Orange Fat Cat Plush – Lifelike Realistic Cute Plushies</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$28.99(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys12.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Radio Flyer Scoot 2 Scooter, Toddler Scooter or Ride On</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">5K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$30.23(9 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 12 months - 4 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys13.png" width="320px" height="255px" alt="" />
+        <p class="first_p">Funko Bitty Pop: Toy Story Mini Collectible Toys - Woody Rex Slinky Dog & Mystery Chase Figure</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">200+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$14.92(10 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys14.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Rainbow Friends – Green Action Figure (5" Tall Posable Figure, Series 1)</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+        <p class="second_gray">FREE delivery Dec 6 - 21</p>
+        <p class="costs"><sup>$</sup>12<sup>00</sup></p><br><br>
+        
+        <p class="cost">$9.99 delivery Dec 15 - Jan 8
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 6 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys15.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Tipmant Baby Toddler Electric Snail Toy Cute Electronic Animal Crawl, Play Music</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$13.99(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 36 months - 8 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys16.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Skibidi Toilet Titan ClockMan Building Sets, Titan Clock Man Multiverse Series Toy</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$29.98(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 6 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys17.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Furby Purple, 15 Fashion Accessories, Interactive Plush Toys for 6 Year Old</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">30+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$44.98(54 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 6 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys18.png" width="320px" height="310px" alt="" />
+        <p class="first_p">STAR WARS The Mandalorian Galactic Snackin' Grogu Animatronic Toy over 40</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">700+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$22.76(43 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 4 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys19.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Gabby's Dollhouse, Gabby Cat Friend Ship, Cruise Ship Toy with 2 Toy Figures, Surprise Toys & Dollhouse</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">9K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$39.35(24 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 3 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys20.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Super Mario Deluxe Bowser's Air Ship Playset with Mario Action Figure</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$35.99(30 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 36 months - 6 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys21.png" width="320px" height="265px" alt="" />
+        <p class="first_p">LonullyMege Ironman MK43 Action Figure-2022 New Released 7 Inch Deluxe Painting Exquisite Collection Movable</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$38.88(2 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 15 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys22.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Vulli Sophie The Giraffe New Box, Polka Dots, One Size, 1 Count (Pack of 1)</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">6K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$25.99(8 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 1 - 3 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys23.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Polly Pocket Dolls, Playset and Travel Toys, 4 Dolls, 1 Vehicle, 25+ Accessories</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">2K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$57.59(8 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 4 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys24.png" width="320px" height="280px" alt="" />
+        <p class="first_p">MEGA Pokémon Action Figure Building Toys, Forest Pokémon Center with 648 Pieces</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">4K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$45.59(13 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 8 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys25.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Nerf Roblox Arsenal: Soul Catalyst Dart Blaster, Includes Code to Redeem Exclusive Virtual Item</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$12.65(7 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 8 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys26.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Magic Mixies Magical Misting Cauldron with Interactive 8 inch Blue Plush Toy and 50+ Sounds</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">2K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$47.38(25 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 5 - 15 years</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys27.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Transformers Toys Studio Series Leader Rise of The Beasts 106 Optimus Primal Toy Action Figure</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$66.69(6 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 8 years and up</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/toys/toys28.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Transformers Legacy Velocitron Speedia 500 Collection Leader Robots in Disguise 2000 Universe Scourge</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">200+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$28.99(48 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+        <p class="end">Ages: 12 years and up</p>
+    </div>
+
+
+  </div>
+{% endblock %}

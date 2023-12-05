@@ -1,0 +1,412 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Perfume</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .main {
+        background-color: snow;
+        width: 320px;
+        height: 530px;
+    }
+    .first_p {
+        margin: 10px 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+    }
+    .star {
+        margin: 10px 20px;
+    }
+    .gray {
+        margin: -10px 20px;
+        color: gray;
+        font-size: 12px;
+    }
+    .second_gray {
+        margin: 22px 20px;
+        color: gray;
+    }
+    .cost {
+        
+        margin: -25px 20px;
+    }
+    .costs {
+        
+        margin: -25px 20px;
+        font-size: 20px;
+    }
+    .end {
+        margin: 40px 20px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Perfume</h1>
+
+  <div class="container">
+
+    <div class="main">
+        <img src="/media/perfume/perfume1.png" width="320px" height="300px" alt="" />
+        <p class="first_p">Bath and Body Works CHAMPAGNE TOAST Fine Fragrance Mist - NEW LOOKS</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$19.00(19 new offers) 
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+        </p>
+        
+    </div>
+    
+    <div class="main">
+        <img src="/media/perfume/perfume2.png" width="320px" height="300px" alt="" />
+        <p class="first_p">Yves Saint Laurent Eau De Parfum Spray for Women, Black Opium, 3 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">2k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$95.34(33 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume3.png" width="320px" height="300px" alt="" />
+        <p class="first_p">Miss Dior / Christian Dior EDT Spray 3.4 oz (w)</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">500+ bought in past month</p>
+        <p class="second_gray">FREE delivery Dec 6 - 21</p>
+        <p class="costs"><sup>$</sup>117 <sup>00</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume4.png" width="320px" height="300px" alt="" />
+        <p class="first_p">Versace Crystal Noir By Gianni Versace For Women Eau De Parfum Spray, 3-Ounces</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">200+ bought in past month</p>
+        <p class="second_gray">$12 delivery Dec 11 - Jan 2</p>
+        <p class="second_gray">More Buying Choices</p>
+        <p class="cost">$54.47(19 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume5.png" width="320px" height="265px" alt="" />
+        <p class="first_p">KHADLAJ PERFUMES Hareem Al Sultan Concentrated Perfume Oil Gold for Women, 1.18 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">5K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$25.99(30 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume6.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Daisy Eau So Fresh Women Eau-de-toilette Spray by Marc Jacobs, 2.5 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">Options: 15 sizes, 12 scents</p>
+        <p class="second_gray">More Buying Choices</p>
+        <p class="cost">$59.69(16 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume7.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Designer Perfume Sampler Set Lot x 12 Sample Vials - High End Fragrance Samples for Women</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">2K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$23.00(17 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume8.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Gucci Bloom for Women Eau de Parfum Spray, 3.3 Ounce, Multi</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$81.13(25 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume9.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Clinique Happy by Clinique for Women, EDP Spray, 3.4 Fl Oz</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">5k+ bought in past month</p>
+        <p class="second_gray">Options: 6 scents</p>
+
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$24.00(49 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume10.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Swiss Arabian Layali Rouge - Luxury Products From Dubai - Long Lasting Addictive Persona</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">5K+ bought in past month</p>
+        <p class="second_gray">Options: 2 sizes, 2 scents</p>
+
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$21.58(8 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume11.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Orientica Royal Amber for Women - 2.7 oz EDP Spray</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$66.95(15 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume12.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Paul Sebastian DESIGN Perfume For Women, Day & Night Soft Floral Fragrance Spray, 3.4 oz</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">3K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="second_gray">Options: 2 sizes</p>
+
+        <p class="cost">$17.81(42 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume13.png" width="320px" height="255px" alt="" />
+        <p class="first_p">Estee Lauder Beautiful Eau De Parfum Spray for Women, 2.5 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="second_gray">Options: 2 sizes, 4 scents</p>
+
+        <p class="cost">$44.99(50 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume14.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Yves Saint Laurent Eau De Parfum Spray for Women, Black Opium, 1.6 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">500+ bought in past month</p>
+        <p class="second_gray">FREE delivery Dec 6 - 21</p>
+        <p class="costs"><sup>$</sup>50<sup>00</sup></p><br><br>
+        
+        <p class="cost">$73.90(7 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume15.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Christian Dior Jadore By Christian Dior For Women. Eau De Parfum Spray 3.4 Ounces</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">2k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$65.98(16 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume16.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Perfume: The Story of a Murderer</p>
+        <p style="color: gray;">2007</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$3.99(1 new offer)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume17.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Lattafa Perfumes Khamrah for Unisex Eau de Parfum Spray, 3.4 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">10k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$29.99(37 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume18.png" width="320px" height="310px" alt="" />
+        <p class="first_p">Estee Lauder 'Pleasures' Eau de Parfum Spray, 1.7 oz</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">500+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$31.55(31 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume19.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Michael Kors Coral Eau de Parfum, 1.7 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">100+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$34.99(24 used & new offers) <small><del>$37.29</del></small>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume20.png" width="320px" height="280px" alt="" />
+        <p class="first_p">COCO MADEMOISELLE by Chanel Eau De Parfum Spray 3.4 oz / 100 ml (Women)</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">Options: 10 sizes, 14 scents</p>
+
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$78.00(30 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume21.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Rihanna Riri Eau De Parfum Spray for Women, Black, 3.4 Fl Oz (Pack of 1)</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">300+ bought in past month</p>
+
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$25.11(50 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume22.png" width="320px" height="265px" alt="" />
+        <p class="first_p">CHANEL Chance for Women, Eau De Parfum Spray, 3.4 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">400+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="second_gray">Options: 2 sizes</p>
+
+        <p class="cost">$182.99(5 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume23.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Marc Jacobs Daisy Eau So Intense Women 1.7 oz EDP Spray</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">50+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$52.02(8 used & new offers) <small><del>$99.00</del></small>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume24.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Estee Lauder Beautiful Women Edp Spray, 2.5 Ounce</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1K+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$46.99(21 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume25.png" width="320px" height="265px" alt="" />
+        <p class="first_p">MARC JACOBS Daisy Love Eau de Toilette Spray, 3.4-oz.</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">600+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$64.49(36 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume26.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Dolce & Gabbana The Only One Eau De Parfum Spray for Women, 3.3 Oz, Multi</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">200+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$113.85(6 used & new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume27.png" width="320px" height="265px" alt="" />
+        <p class="first_p">Victoria's Secret Tease Fine Fragrance 8.4oz Mist</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">3k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$23.80(5 new offers)
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+    <div class="main">
+        <img src="/media/perfume/perfume28.png" width="320px" height="280px" alt="" />
+        <p class="first_p">Perfume: The Story of a Murderer</p>
+        <p class="star">⭐⭐⭐⭐⭐</p>
+        <p class="gray">1k+ bought in past month</p>
+        <p class="second_gray">No featured offers available</p>
+        <p class="cost">$13.99(48 new offers) <small><del>$17.00</del></small>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </p>
+        
+    </div>
+
+
+  </div>
+{% endblock %}

@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% comment %} {% load socialaccount %} {% endcomment %}
+
+{% block title %}
+  <title>Login</title>
+{% endblock %}
+
+
+{% block style %}
+<style>
+
+  .container {
+    background-image: linear-gradient(to right, snow, white); 
+    border-radius: 20px 20px 20px 20px;
+    padding: 50px;
+    border: 2px solid lightgray;
+    width: 550px;
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  .apple {
+    border: 2px slice black;
+    border-radius: 18px;
+    background-color: snow;
+    color: black;
+    width: 350px;
+    padding: 3px;
+    margin: 10px 50px;
+  }
+  .google {
+    border: 2px slice black;
+    border-radius: 18px;
+    background-color: blue;
+    color: snow;
+    width: 350px;
+    padding: 3px;
+    margin: 10px 50px;
+  }
+
+  hr{
+    width: 150px;
+  }
+
+  .grid_hr {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    margin: 10px 460px;
+    text-align: center;
+    color: #333;
+  }
+  .grid_hr2 hr{
+    width: 100px;
+  }
+  .grid_hr2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px 5px;
+    color: gray;
+  }
+  .sign_up {
+    width: 550px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: snow;
+    border: 2px solid lightgray;
+    margin: -15px 410px;
+  }
+
+  .sign_up a {
+    text-decoration: none;
+    color: gray;
+    
+  }
+  .signin {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 31px;
+    text-align: left;
+  }
+  .org button {
+    background-color: orange;
+    border: none;
+    color: black;
+    width: 450px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+    color: snow;
+  }
+  .org button:hover {
+    background-color: darkorange;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+    color: snow;
+    border: none;
+    color: black;
+    width: 450px;
+  }
+  .amazon {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 34px;
+  }
+  body {
+    background-color: snow;
+  }
+  
+  
+</style>
+{% endblock %}
+
+{% block auth_content %}
+<br><br>
+<h1 class="amazon"><img src="/media/amazonblack.png" width="150px" height="60px" alt="" /></h1>
+  <div class="container">
+    <div class="org">
+    <h1 class="signin">Sign in</h1>
+
+    {% include "form_snippets.html" with form=form btn_text='Login' %}
+</div>
+<br>
+<p>By continuing, you agree to Amazon's <a href="" style="text-decoration: none;">Conditions of Use</a> and <a href="" style="text-decoration: none;">Privacy Notice.</a></p>
+<br>
+
+<div class="dropdown">
+  <a href="#" role="button" 
+  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Need help
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Forgot your password?</a></li>
+    <li><a class="dropdown-item" href="#">Other issues with Sign-In</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="sec_main">
+  <div class="grid_hr">
+    <div><hr></div>
+    <div><pre>New to Amazon?  </pre></div>
+    <div><hr></div>
+  </div>
+</div>
+
+<button class="sign_up"><a href="{% url 'registration' %}">Sign Up</a></button>
+
+<br>
+<br><br>
+<br>
+  
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

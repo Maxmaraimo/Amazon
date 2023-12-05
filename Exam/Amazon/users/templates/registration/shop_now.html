@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>ShopNow</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #232f3e;
+      color: snow;
+      padding: 10px;
+      text-align: center;
+    }
+    header h3 {
+      color: snow;
+    }
+    
+    h3 {
+      color: #232f3e;
+    }
+    
+    .container {
+      background-image: linear-gradient(to right, snow, white);
+      border-radius: 2px 2px 2px 2px;
+      padding: 50px;
+      border: 2px solid lightgray;
+      width: 720px;
+    }
+    .input-group {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        margin: -20px 10px;
+    }
+    .ch_cont_grid {
+        margin: 10px 50px;
+    }
+    .ch_cont_grid input {
+        width: 410px;
+        margin: 10px 10px;
+        border-radius: 50px;
+        padding: 3px;
+        border: 1px solid orange;
+    }
+    .cash {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .cash_sec {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .ch_cash {
+        background-color: rgb(233, 233, 233);
+        width: 320px;
+        height: 210px;
+        border-radius: 15px;
+    }
+    .ch_cash2 {
+        background-color: rgb(233, 233, 233);
+        width: 320px;
+        height: 110px;
+        border-radius: 15px;
+    }
+    .first_grid {
+        display: grid;
+        grid-template-columns: repeat(2,150px);
+    }
+    .first_grid p {
+        font-size: 12px;
+    }
+    .first_grid input {
+        margin: 20px 50px;
+
+    }
+    .second_grid {
+        display: grid;
+        grid-template-columns: repeat(2,150px);
+    }
+    .second_grid p {
+        font-size: 11px;
+        margin: -1px 1px;
+
+    }
+    .span {
+        margin: -10px 50px;
+        color: green;
+
+    }
+
+    .ch_cash_first {
+        background-color: rgb(233, 233, 233);
+        width: 320px;
+        height: 200px;
+        border-radius: 15px;
+    }
+    .ch_cash_first h5 {
+        margin: 20px 25px;
+    }
+
+    .ch_cash_sec {
+        background-color: rgb(233, 233, 233);
+        width: 320px;
+        height: 150px;
+        border-radius: 15px;
+    }
+    .ch_cash_sec h5 {
+        margin: 20px 25px;
+        font-size: 15px;
+
+    }
+    .ch_cash_sec p {
+        margin: 20px 45px;
+        color: gray;
+        font-size: 12px;
+    }
+    
+    .month p {
+        font-size: 12px;
+        margin: 5px 20px;
+    }
+    .month {
+        background-color: snow;
+        width: 270px;
+        padding: 2px;
+        height: 35px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-radius: 15px;
+        margin: 10px 20px;
+    }
+
+    button {
+        background-color: orange;
+        color: snow;
+        border: none;
+        padding: 3px;
+        border-radius: 10px;
+        width: 470px;
+        margin: 40px 70px;
+    }    
+    button:hover {
+        background-color: darkorange;
+        color: snow;
+        border: none;
+        padding: 3px;
+        border-radius: 10px;
+        width: 470px;
+        margin: 40px 70px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <br>
+  <header>
+    <!-- Здесь можете разместить ваш контент, например, список товаров, изображения и т.д. -->
+    <h2>Welcome to our online store!</h2>
+    <p>Explore a wide range of products...</p>
+  </header>
+<br>
+  <div class="container">
+
+      
+      <div class="input-group">
+          <label for="location">Location</label><br>
+          <select name="location" id="location">
+              <option value="US">Toshkent</option>
+              <option value="UK">Andijon</option>
+              <option value="CA">Buxoro</option>
+              <option value="CA">Jizzax</option>
+              <option value="CA">Qashqadaryo</option>
+              <option value="CA">Navoi</option>
+            <option value="CA">Namangan</option>
+            <option value="CA">Samarqand</option>
+            <option value="CA">Surxondaryo</option>
+            <option value="">Sirdaryo</option>
+            <option value="">Farg'ona</option>
+            <option value="">Xorazm</option>
+            <option value="">Qoraqalpog'iston</option>
+        </select>
+    </div>
+    <br><br>
+
+        <div class="cash">
+            <div class="ch_cash">
+                <div class="first_grid">
+                    <div>
+                        <input type="radio" name="ok">
+                    </div>
+                    <div><br>
+                        <p>Пунк выдачи Amazon</p>
+                        <p>Можно забрать с меств, бесплатно</p>
+                    </div>
+                </div>
+    
+                <div class="second_grid">
+                    <div class="span">
+                        <span>✔</span><br>
+                        <span>✔</span><br>
+                        <span>✔</span><br>
+                        <span>✔</span>
+                    </div>
+    
+                    <div>
+                        <p>Доставка за 1 день</p>
+                        <p>Срок хранения заказа 5д</p>
+                        <p>Можно проверить примерить</p>
+                        <p>Возврат товара без проблем</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="ch_cash2">
+                <div class="first_grid">
+                    <div>
+                        <input type="radio" name="ok">
+                    </div>
+                    <div><br>
+                        <p>Курьером до двери</p>
+                        <p>Доставим: за 3$</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <br>
+<br>
+<br>
+<h3>Получатель заказа</h3>
+<hr>
+    <div class="ch_cont">
+        <div class="ch_cont_grid">
+            <div><input type="text" placeholder=" first name" id="firstName"></div>
+            <div><input type="text" placeholder=" last name" id="lastName"></div>
+            <div><input type="text" placeholder=" Пункт сдачи" id="pickupPoint"></div>
+            <div><input type="number" placeholder=" количесто продукта" id="phone"></div>
+        </div><br>
+
+
+
+    </div> 
+    
+    <br>
+    <br>    
+    <h5>Способ оплаты</h5>
+    <hr>
+
+    <div class="cash_sec">
+
+        <div class="ch_cash_first">
+            <div class="ch_cash_sec_grid">
+                <h5><input type="radio" name="second">  Рассрочка Amazon Nasiya</h5>
+
+                <div class="month">
+                    <div><p>3 месяца</p></div>
+                    <div><p>61 600 сум/мес</p></div>
+                </div>
+                <div class="month">
+                    <div><p>6 месяца</p></div>
+                    <div><p>34 650 сум/мес</p></div>
+                </div>
+                <div class="month">
+                    <div><p>12 месяца</p></div>
+                    <div><p>19 800 сум/мес</p></div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="ch_cash_sec">
+            <br>
+            <h5><input type="radio" name="second">  Наличными или картой при получении</h5>
+            
+            <p>Оплата в пункте выдачи или курьеру при получения заказа или <a href="{% url 'atthemoment' %}">сейчас</a></p>
+        </div>
+        
+    </div>
+
+
+        <button type="button" onclick="validateForm()">Оформить заказ</button>
+
+        
+  </div>
+
+  {% block script %}
+  <script>
+    function validateForm() {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const phone = document.getElementById('phone').value;
+      const pickupPoint = document.getElementById('pickupPoint').value;
+
+      if (!firstName || !lastName || !phone || !pickupPoint) {
+        alert('Please fill in all fields.');
+      } else {
+        alert('Order placed successfully!');
+        // Here you can submit the form or perform any other necessary action
+      }
+    }
+  </script>
+  {% endblock %}
+{% endblock %}
+

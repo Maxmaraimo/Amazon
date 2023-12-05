@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Laptops</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    *{
+      transition: 0.01s;
+    }
+    .ch_main {
+      background-color: white;
+      width: 1200px;
+      height: 230px;
+    }
+    .ch_main_grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 5px;
+    }
+    .ch_main_grid pre {
+      font-size: 15px;
+      margin: -5px -280px;
+    }
+    .ch_main_grid pre:hover {
+      color: orange;
+    }
+    .ch_main_grid .p {
+      font-size: 15px;
+      margin: -10px -280px;
+    }
+    .ch_main_grid .span {
+      background-color: lightgrey;
+      padding: 3px;
+    }
+    .ch_main_grid .p_2 {
+      font-size: 15px;
+      margin: 20px -280px;
+    }
+    .ch_main_grid .p_3 {
+      font-size: 15px;
+      margin: -15px -280px;
+      color: grey;
+    }
+    .ch_main_grid .p_4 {
+      font-size: 15px;
+      margin: 20px -280px;
+    }
+    .ch_main_grid .p_4 a {
+      text-decoration: none;
+    }
+    .ch_main_grid .p_4 a:hover {
+      color: orange;
+    }
+    .ch_main_grid .p_5 {
+      font-size: 15px;
+      margin: -20px -280px;
+    }
+    
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Result</h1>
+
+  <div class="main">
+
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_1.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+HP Victus 15 Gaming Laptop, 15.6" FHD 144Hz Display, AMD Ryzen 5 7535HS, 16GB DDR5RAM, 1TB PCIe M.2 SSD,
+NVIDIA GeForce RTX 2050, HDMI, Webcam, Backlit Keyboard, Wi-Fi 6,...
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 2050</span> <span class="span">Ryzen 5</span></p>
+          <p class="p_2">⭐⭐⭐⭐⭐ 800$</p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a> </p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+<br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_2.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+HP Victus Gaming Laptop 15.6" FHD 144Hz Display, AMD Ryzen 5 7535HS Processor, NVIDIA
+GeForce RTX 2050, 16GB DDR5 RAM, 1TB PCIE SSD, Wifi6, Backlit Keyboard, Windows 11
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA</span> <span class="span">Ryzen 5</span></p>
+          <p class="p_2">⭐⭐⭐ 500$</p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_3.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+ASUS TUF F17 Gaming Laptop, 17.3" 144Hz FHD IPS-Type Display, Intel Core i5-11400H
+Processor, GeForce RTX 3050, 8GB DDR4 RAM, 512GB PCIe SSD, Wi-Fi 6, Windows 11
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 3050</span> <span class="span">Core i5</span></p>
+          <p class="p_2">⭐⭐⭐⭐ 700$</p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_4.png" width="290px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+ASUS TUF Gaming A15 (2023) Gaming Laptop, 15.6” FHD 144Hz, 100% sRGB Display, GeForce
+RTX 4050, AMD Ryzen 7 7735HS, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 4050</span> <span class="span">Ryzen 7</span></p>
+          <p class="p_2">⭐⭐⭐⭐ 550$</p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_5.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+HP Victus Gaming Laptop, 15.6" FHD IPS 144Hz, 13th Gen Intel 8-Core i5-13420H Up to 4.60
+GHz, GeForce RTX 3050 6GB, 32GB RAM, 1TB PCIe 4.0,Backlit Keyboard,WiFi 6,HDMI
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 3050</span> <span class="span">Core i5</span></p>
+          <p class="p_2">⭐⭐ 300$</p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_6.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+ASUS TUF Gaming F15 Gaming Laptop, 15.6” 144Hz FHD Display, Intel Core i5-11400H
+Processor, GeForce RTX 2050, 8GB DDR4 RAM, 512GB PCIe SSD Gen 3, Wi-Fi 6, Windows 11,
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 2050</span> <span class="span">Core i5</span></p>
+          <p class="p_2">⭐⭐⭐⭐⭐ 720$ <del>900$</del></p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_7.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+ASUS TUF Gaming F15 (2022) Gaming Laptop, 15.6” FHD 144Hz Display, GeForce RTX 3050,
+Intel Core i5-12500H, 16GB DDR4, 512GB PCIe SSD, Wi-Fi 6, Windows 11, FX507ZC-
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 3050 Ti</span> <span class="span">Core i5</span></p>
+          <p class="p_2">⭐⭐⭐ 400$ <del>600$</del></p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_8.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+Razer Blade 15 Gaming Laptop: NVIDIA GeForce RTX 3070 Ti - 12th Gen Intel 14-Core i9 CPU -
+15.6” QHD OLED 240Hz - 16GB DDR5 RAM, 1TB PCIe SSD - Windows 11 - CNC Aluminum 
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 3070 Ti</span> <span class="span">Core i9</span></p>
+          <p class="p_2">⭐⭐⭐⭐ 850$ <del>1000$</del></p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_9.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+MSI Katana 15 15.6" 144Hz FHD Gaming Laptop: 13th Gen Intel Core i7, RTX 4070, 16GB DDR5,
+1TB NVMe SSD, USB-Type C, Cooler Boost 5, Win11 Home: Black B13VGK-484US
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 4070</span> <span class="span">Core i7</span></p>
+          <p class="p_2">⭐⭐⭐⭐⭐ 1020$ <del>1200$</del></p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <div class="ch_main">
+      <div class="ch_main_grid">
+        <div>
+          <img src="/media/laptops/lap_10.png" width="310px" height="230px" alt="" />
+        </div>
+        <div>
+          <pre><b>
+ASUS ROG Strix G17 (2023) Gaming Laptop, 17.3” QHD 240Hz, GeForce RTX 4070, AMD Ryzen
+9 7945HX, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6E, Windows 11, G713PI-DS94 Eclipse Gray
+          </b></pre>
+          <p class="p"><span class="span">NVIDIA GeForce RTX 4070</span> <span class="span">Ryzen 9</span></p>
+          <p class="p_2">⭐⭐⭐⭐⭐ 1100$ <del>1500$</del></p>
+          <p class="p_3">100+ bought in past month</p>
+          <p class="p_4">Options: <a href="">4 capacities</a></p>
+          <a class="p_5" style="text-decoration: none;" href="{% url 'shop_now' %}">Shop now</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Sprite</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        gap: 10px;
+    }
+    .main {
+        background-color: snow;
+        width: 390px;
+        height: 370px;
+        font-size: 15px;
+    }
+    .main:hover img{
+        transform: scale(1.10);
+    }
+    .main img {
+        margin: 10px 20px;
+    }
+
+    .main .first_p {
+        margin: -10px 20px;
+    }
+    .main .star {
+        margin: 10px 20px;
+    }
+    .main .cost {
+        margin: 15px 20px;
+        font-size: 18px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+   <h1><img src="/media/drinks/spritelogo.png" width="180px" height="150px" alt="" /></h1>
+
+  <div class="container">
+
+    <div class="main"><br>
+        <img src="/media/drinks/sprite1.png" width="350px" height="200px" alt="" />
+        <br><br>
+        <p class="first_p">Sprite, 12 fl oz, 12 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 14,009</p>
+        <b class="cost"><sup>$</sup>17<sup>85</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main"><br>
+        <img src="/media/drinks/sprite2.png" width="350px" height="190px" alt="" />
+        <p class="first_p">Sprite Zero, 12 fl oz, 12 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 2,939</p>
+        <b class="cost"><sup>$</sup>17<sup>78</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+    <div class="main">
+        <img src="/media/drinks/sprite3.png" width="330px" height="250px" alt="" style="margin: 3px 50px;" />
+        <p class="first_p">Sprite, 12 fl oz, 24 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 14.009</p>
+        <b class="cost"><sup>$</sup>23<sup>85</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/sprite4.png" width="330px" height="250px" alt="" />
+        <p class="first_p">Sprite lemon Lime Soda Soft Drinks, 7.5 fl oz,6 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 5.556</p>
+        <b class="cost"><sup>$</sup>14<sup>87</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/sprite5.png" width="270px" height="220px" alt="" style="margin: 3px 50px;" />
+        <p class="first_p">Sprite Zero, 16.9 fl oz, 6 Count</p>
+        <p class="star">⭐⭐⭐⭐⭐ 803</p>
+        <b class="cost"><sup>$</sup>18<sup>92</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/sprite6.png" width="300px" height="230px" alt="" style="margin: 3px 50px;" />
+        <p class="first_p">Sprite Lymonade Legacy, 12 fl oz, 12 Pack</p>
+        <p class="star">⭐⭐⭐⭐⭐ 42</p>
+        <b class="cost"><sup>$</sup>22<sup>98</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+
+  </div>
+{% endblock %}

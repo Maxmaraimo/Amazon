@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Pepsi</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr );
+        gap: 10px;
+    }
+    .main {
+        background-color: snow;
+        width: 390px;
+        height: 360px;
+        font-size: 13px;
+    }
+    .main:hover img{
+        transform: scale(1.10);
+    }
+    .main img {
+        margin: 10px 20px;
+    }
+
+    .main .first_p {
+        margin: -10px 20px;
+    }
+    .main .star {
+        margin: 10px 20px;
+    }
+    .main .cost {
+        margin: 15px 20px;
+        font-size: 18px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+   <h1><img src="/media/drinks/pepsilogo.png" width="220px" height="120px" alt="" /></h1>
+
+
+  <div class="container">
+
+    <div class="main"><br>
+        <img src="/media/drinks/pepsi1.png" width="350px" height="200px" alt="" />
+        <br><br>
+        <p class="first_p">Pepsi Sode Mini Cans, 7.5 Ounce (Pack of 10)</p>
+        <p class="star">⭐⭐⭐⭐⭐ 31,426</p>
+        <b class="cost"><sup>$</sup>5<sup>78</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main"><br>
+        <img src="/media/drinks/pepsi2.png" width="350px" height="190px" alt="" />
+        <p class="first_p">Pepsi Flavors Variety Pack, Wild Cherry, Mango, Original, 12 Ounce Cans</p>
+        <p class="star">⭐⭐⭐⭐⭐ 11,723</p>
+        <b class="cost"><sup>$</sup>25<sup>38</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+    <div class="main">
+        <img src="/media/drinks/pepsi3.png" width="330px" height="230px" alt="" />
+        <p class="first_p">Pepsi Real Sugar Soda Mini Cans, 7.5oz Mini Cans</p>
+        <p class="star">⭐⭐⭐⭐⭐ 11,723</p>
+        <b class="cost"><sup>$</sup>5<sup>78</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/pepsi4.png" width="330px" height="250px" alt="" />
+        <p class="first_p">Pepsi Wild Cherry Soda Mini Cans, 7.5 Ounce Mini Cans</p>
+        <p class="star">⭐⭐⭐⭐⭐ 296</p>
+        <b class="cost"><sup>$</sup>5<sup>78</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/pepsi7.png" width="270px" height="220px" alt="" style="margin: 10px 12px;"/>
+        <p class="first_p">Pepsi Nitro Draft Cola & Vanilla Draft Cola Variety Pack, 13.65oz Cans</p>
+        <p class="star">⭐⭐⭐⭐⭐ 3244</p>
+        <b class="cost"><sup>$</sup>33<sup>35</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+    <div class="main">
+        <img src="/media/drinks/pepsi6.png" width="300px" height="230px" alt="" />
+        <p class="first_p">Pepsi Zero Sugar Soda 7.5 Ounce Mini Cans</p>
+        <p class="star">⭐⭐⭐⭐⭐ 11,723</p>
+        <b class="cost"><sup>$</sup>5<sup>78</sup>
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+        </b>
+    </div>
+
+
+
+  </div>
+{% endblock %}

@@ -1,0 +1,396 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Books</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5,228px);
+        gap: 10px;
+    }
+    .main {
+      background-color: snow;
+      width: 240px;
+      height: 280px;
+      border: 2px solid lightgrey;
+      text-align: center;
+    }
+    .main img {
+      margin: 10px 50px;
+    }
+    .main .first_p {
+      font-size: 13px;
+      margin: -1px 2px;
+    }
+    .main .cost {
+      font-size: 13px;
+      color: maroon;
+    }
+
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1>Books</h1>
+
+  <div class="container">
+
+    <div class="main">
+      <img src="/media/books/books1.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Fourth Wing (The Empyrean, 1)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$10.15
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books2.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Ballad of Songbirds and Snakes (A Hunger Games) (The Hunger Games)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 71,124</p>
+      <p class="cost">$10.99
+        <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books3.png" width="130px" height="150px" alt="" />
+      <p class="first_p">No Brainer Diary of Wimpy Kid Book 18</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 1,815</p>
+      <p class="cost">$8.59
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books4.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Taylor Swift: A Little Golden Book Biography</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 4,871</p>
+      <p class="cost">$4.78
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books5.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Friends, Lovers, and the Big Terrible Thing: A Memoir</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 30,341</p>
+      <p class="cost">$23.99
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books6.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Friends, Lovers, and the Big Terrible Thing: A Memoir)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$19.45
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books7.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Heaven & Earth Grocery Store: A Novel</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$16.99
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books8.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Great Disappearance: 31 Ways to be Rapture Ready</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$18.99
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books9.png" width="130px" height="150px" alt="" />
+      <p class="first_p">My Name Is Barbra</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$31.50
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books10.png" width="130px" height="150px" alt="" />
+      <p class="first_p">My Name Is Barbra</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$15.37
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books11.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Killers of the Flower Moon: The Osage Murders and the Birth of the FBI</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$9.85
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books12.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Prequel: An American Fight Against Fascism</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$20.88
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books13.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Pioneer Woman Cooks―Dinner's Ready!: 112 Fast and Fabulous Recipes</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$20.53
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books14.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Pioneer Woman Cooks―Dinner's Ready!: 112 Fast and Fabulous Recipes for…</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$13.75
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books15.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Pioneer Woman Cooks―Dinner's Ready!: 112 Fast and Fabulous Recipes for…</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$13.85
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books16.png" width="130px" height="150px" alt="" />
+      <p class="first_p">All the Light We Cannot See: A Novel</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$13.00
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books17.png" width="130px" height="150px" alt="" />
+      <p class="first_p">How to Catch a Reindeer</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$5.00
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books18.png" width="130px" height="150px" alt="" />
+      <p class="first_p">How to Catch a Reindeer</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$6.15
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books19.png" width="130px" height="150px" alt="" />
+      <p class="first_p">My Effin' Life</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$24.99
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books20.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Tired of Winning: Donald Trump and the End of the Grand Old Party</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$27.79
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books21.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Interesting Facts For Curious Minds: 1572 Random But Mind-Blowing Fact</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$17.15
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books22.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Little Blue Truck's Christmas: A Christmas Holiday Book for Kids</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$11.15
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books23.png" width="130px" height="150px" alt="" />
+      <p class="first_p">A Court of Thorns and Roses Paperback Box Set (5 books)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$48.77
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books24.png" width="130px" height="150px" alt="" />
+      <p class="first_p">A Court of Thorns and Roses Paperback Box Set (5 books)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$10.45
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books25.png" width="130px" height="150px" alt="" />
+      <p class="first_p">How to Catch a Dinosaur</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 13,805</p>
+      <p class="cost">$5.62
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books26.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Constitution of the United States and Other Patriotic Documents</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$29.33
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books27.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$10.19
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books28.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Ghosts of Honolulu: A Japanese Spy, A Japanese American Spy Hunter</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$20.98
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books29.png" width="130px" height="150px" alt="" />
+      <p class="first_p">A Court of Thorns and Roses (A Court of Thorns and Roses, 1)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$10.37
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books30.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Exchange: After The Firm (The Firm Series)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$18.96
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books31.png" width="130px" height="150px" alt="" />
+      <p class="first_p">The Complete Cookbook for Young Chefs: 100+ Recipes that You'll Love to Cook and Eat</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$10.49
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+
+    <div class="main">
+      <img src="/media/books/books32.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Murtagh: The World of Eragon (The Inheritance Cycle)</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$22.48
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books33.png" width="130px" height="150px" alt="" />
+      <p class="first_p">Cat Kid Comic Club: Influencers: A Graphic Novel (Cat Kid Comic Club #5): From the Creator of Dog Man</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$11.04
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books34.png" width="130px" height="150px" alt="" />
+      <p class="first_p">How To Draw 101 Cute Stuff For Kids: Simple and Easy Step-by-Step Guide Book</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$9.99
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+    <div class="main">
+      <img src="/media/books/books35.png" width="130px" height="150px" alt="" />
+      <p class="first_p">How to Know a Person: The Art of Seeing Others Deeply and Being Deeply Seen</p>
+      <p class="first_p">⭐⭐⭐⭐⭐ 113,815</p>
+      <p class="cost">$19.53
+            <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+
+      </p>
+    </div>
+
+
+
+
+  </div>
+{% endblock %}

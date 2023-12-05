@@ -1,0 +1,413 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>SeeMore</title>
+{% endblock %}
+
+{% block style %}
+  <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,350px);
+        gap: 5px;
+    }
+    .main {
+        width: 360px;
+        height: 380px;
+        background-color: snow;
+        border: 2px solid gainsboro;
+        margin: 10px 40px;
+        padding: 3px;
+    }
+    .ch_main_gr {
+        display: grid;
+        grid-template-columns: repeat(3,110px);
+        gap: 2px;
+        margin: 10px 30px;
+        font-size: 13px;
+    }
+    .ch_main_gr .first {
+        background-color: maroon;
+        padding: 4px;
+        width: 100px;
+        color: snow;
+        border-radius: 2px;
+    }
+    .ch_main_gr .deal {
+        background-color: maroon;
+        padding: 4px;
+        width: 40px;
+        color: snow;
+        border-radius: 2px;
+    }
+    .ch_main_gr .second {
+        color: maroon;
+    }
+    .fir_p {
+        margin: 10px 30px;
+        font-size: 13px;
+    }
+    .fir_p:hover {
+        color: maroon;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="result">
+  <h3>Product</h3>
+</div>
+<div class="container">
+   
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr1.png" width="350px" height="230px" alt="" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 30% off</div>
+            <div class="second">Deal</div>
+            <div>
+                54$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+
+        </div>
+        <p class="fir_p">Men’s and Women’s Fashion from Amazon Essentials and The Drop</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr2.png" width="350px" height="250px" alt="" />
+        <div class="ch_main_gr">
+            <div class="deal">Deal</div>
+            <div>
+                7$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Everyday Essentials from Amazon Brands</p>
+    </div>
+    
+    <div class="main">
+        <img src="/media/see_all_deals/other_pr3.png" width="350px" height="290px" alt="" />
+        <div class="ch_main_gr">
+            <div class="deal">Deal</div>
+            <div>
+                11$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Deals on Holiday Décor</p>
+    </div>
+
+    <div class="main">
+        <img src="/media/see_all_deals/other_pr4.png" width="350px" height="290px" alt="" />
+        <div class="ch_main_gr">
+            <div class="deal">Deal</div>
+            <div>
+                85  $ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Spend $50 and get $10 off select NBA products</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr5.png" width="300px" height="250px" alt="" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 50% off</div>
+            <div class="second">Deal</div>
+            <div>
+                125$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Spend $50 and get $10 off select NBA products</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr6.png" width="300px" height="230px" alt="" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 50% off</div>
+            <div class="second">Deal</div>
+            <div>
+                74$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Spend $50 and get $10 off select NBA products</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr7.png" width="300px" height="230px" alt="" style="margin: 5px 30px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 37% off</div>
+            <div class="second">Deal</div>
+            <div>
+                130$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Mattresses & Beds from Linenspa, Olee Sleep and more</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr8.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 55% off</div>
+            <div class="second">Deal</div>
+            <div>
+                56$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Furniture from Sauder, Dorel, and more</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr9.png" width="300px" height="230px" alt=""  style="margin: 5px 25px;"/>
+        <div class="ch_main_gr">
+            <div class="first">Up to 49% off</div>
+            <div class="second">Deal</div>
+            <div>
+                100$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Bedding, Bath & Electrics from Eddie Bauer, Conair and Madesmart</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr10.png" width="300px" height="230px" alt="" style="margin: 5px 25px;"/>
+        <div class="ch_main_gr">
+            <div class="first">Up to 43% off</div>
+            <div class="second">Ends in 22.11.2023</div>
+            <div>
+                115$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Amazon Fire 10 Tablets</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr11.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 71% off</div>
+            <div class="second">Deal</div>
+            <div>
+                145$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Rugs from Safavieh, nuLOOM, and more</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr12.png" width="230px" height="300px" alt="" style="margin: -20px 20px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 30% off</div>
+            <div class="second">Deal</div>
+            <div>
+                65$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Amazon Essentials Women's Apparel</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr13.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 56% off</div>
+            <div class="second">Deal</div>
+            <div>
+                15$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Amazon eero mesh Wi-Fi routers and systems</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr14.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 25% off</div>
+            <div class="second">Deal</div>
+            <div>
+                20$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Men's, Women's, and Kids' Clothing from Amazon Brands</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr15.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 30% off</div>
+            <div class="second">Deal</div>
+            <div>
+                13$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">ecobee Smart Thermostats and more</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr16.png" width="270px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 27% off</div>
+            <div class="second">Deal</div>
+            <div>
+                12$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Pet Essentials from Amazon Brands</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr17.png" width="270px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 50% off</div>
+            <div class="second">Deal</div>
+            <div>
+                7$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Certified Refurbished Ring Security Doorbells, Cameras and Alarms</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr18.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 52% off</div>
+            <div class="second">Deal</div>
+            <div>
+                255$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>  
+        </div>
+        <p class="fir_p">Living Room Furniture from Rockpoint, Vecelo and more</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr19.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 15% off</div>
+            <div class="second">Deal</div>
+            <div>
+                8$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Disney, Marvel, and Star Wars Apparel from Merch on Demand</p>
+    </div>
+
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr20.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 83% off</div>
+            <div class="second">Deal</div>
+            <div>
+                42$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Kindle monthly deals, up to 80% off on more than 700 titles</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr21.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 22% off</div>
+            <div class="second">Deal</div>
+            <div>
+                185$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Car Seats, Strollers & More From Britax & BOB Gear</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr22.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 44% off</div>
+            <div class="second">Deal</div>
+            <div>
+                50$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Honeywell Home Color Thermostat</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr23.png" width="300px" height="230px" alt="" style="margin: 5px 25px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 20% off</div>
+            <div class="second">Deal</div>
+            <div>
+                70$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">TP-Link WiFi 6 Routers</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr24.png" width="285px" height="190px" alt="" style="margin: 5px 30px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 21% off</div>
+            <div class="second">Deal</div>
+            <div>
+                20$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Thule Outdoor products</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr25.png" width="285px" height="200px" alt="" style="margin: 5px 30px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 60% off</div>
+            <div class="second">Deal</div>
+            <div>
+                40$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Certified Refurbished eero WiFi routers and extenders</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr26.png" width="285px" height="210px" alt="" style="margin: 5px 30px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 15% off</div>
+            <div class="second">Deal</div>
+            <div>
+                80$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Amazfit Smart Watches</p>
+    </div>
+
+    <div class="main">
+        <br>
+        <img src="/media/see_all_deals/other_pr27.png" width="280px" height="235px" alt="" style="margin: 5px 30px;" />
+        <div class="ch_main_gr">
+            <div class="first">Up to 20% off</div>
+            <div class="second">Deal</div>
+            <div>
+                17$ <a style="text-decoration: none;font-size: 15px;" href="{% url 'shop_now' %}">buy</a>
+            </div>
+        </div>
+        <p class="fir_p">Best Sellers in Music Merch, CDs, Vinyl & more</p>
+    </div>
+
+    
+</div>
+
+{% endblock %}

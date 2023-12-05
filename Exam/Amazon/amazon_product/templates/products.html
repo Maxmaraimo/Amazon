@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+  <title>Product</title>
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block style %}
+<style>
+  body {
+    background-color: snow;
+  }
+
+  .all-books {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgb(115, 67, 12);
+    background: radial-gradient(circle, rgb(124, 75, 10) 5%, rgba(13,12,12,1) 60%);
+
+    border-radius: 0 20px 20px 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.book {
+    border-radius: 10px;
+    padding: 30px;
+    background: rgba(133, 133, 133, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: snow;
+}
+
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.all-books img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    background-blend-mode: darken;
+}
+
+.all-books img:hover {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    transform: scale(1.10);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+.all-books .book-cost {
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+.all-books p {
+    margin-top: 10px;
+
+    /* hide the text if overflows */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+
+    /* styling */
+    font-family: cursive, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.text-secondary {
+  font-size: 12px;
+}
+.type {
+  font-size: 11px;
+  text-align: right;
+  margin: 120px 1px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<img src="/media/amazonsellers.png" width="200" height="130" alt="" />
+
+
+  <div class="container-fluid">
+    <div class="all-books">
+      {% if object_list %}
+        {% for book in object_list %}
+          <div class="book">
+            <div class="book-header">
+              {% comment %}to filter created we can use | date:'d-m-Y' or | timesince or | timeuntil{% endcomment %}
+              <small class="text-secondary">Created at: {{ book.created|date:'d-m-Y' }} </small>
+              <p class="book-cost">$ {{ book.price }}</p>
+            </div>
+            <img src="{{ book.image.url }}" alt="{{ book.title }}" width="230px" height="1000px"/>
+
+            <h3>{{ book.title }} <small class="type"> {{ book.genre }} </small></h3>
+            <p>{{ book.description }}</p>
+            
+
+            {% comment %}we update it if only current user is creator of book{% endcomment %}
+            {% comment %} {% if book.creator == request.user %}
+              {% endcomment %}
+              <div class="book-footer">
+                <hr />
+
+                {% if book.author.id == request.user.id %}
+                  <a href="{% url 'update_product' book.id %}" class="btn btn-sm col-sm-5 btn-outline-primary">Update</a>
+                  <a 
+                    href="{% url 'delete_product' book.id %}" 
+                    class="btn btn-sm col-sm-5 btn-outline-danger">
+                    Delete
+                  </a>
+                {% else %}
+                  <a href="{% url 'shop_now' %}" 
+                    class="btn btn-outline-warning"
+                  >
+                    Bought
+                  </a>
+                  
+                {% endif %}
+              </div>
+              {% comment %}
+            {% endif %} {% endcomment %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No Product found</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
