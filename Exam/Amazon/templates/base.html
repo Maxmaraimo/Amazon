@@ -25,8 +25,6 @@
     {% endblock %}
   </head>
   <body>
-
-
     {% if user.is_authenticated %}
       <main id="logged-in-menu">
         <div>
@@ -48,9 +46,8 @@
       </main>
     {% else %}
       <div class="logged-out-navbar">
-        <a style="float: left;" href="{% url 'home_page' %}"><img src="/media/amazoncom.png" width="120px" height="28px" alt="" />
-        </a>
-        
+        <a style="float: left;" href="{% url 'home_page' %}"><img src="/media/amazoncom.png" width="120px" height="28px" alt="" /></a>
+
         <a href="{% url 'registration' %}">Sign Up</a>
         <a href="{% url 'login' %}">Sign in</a>
       </div>
@@ -77,106 +74,105 @@
         return new bootstrap.Tooltip(tooltipTriggerEl)
       })
     </script>
-<style>
-  .end .first_st {
-    background-color: #444;
-    text-align: center;
-    font-size: 13px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: snow;
-    margin: 30px;
-    padding: 15px;
-    position: relative;
-    top: 30px;
-    
-  }
-  .end .first_st:hover {
-    background-color: #555;
-  }
-  .end .second_st {
-    background-color: #222;
-    color: snow;
-    height: 420px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    margin: 30px;
-    padding: 15px;
-  }
-  .ch_second_st {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    <style>
+      .end .first_st {
+        background-color: #444;
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: snow;
+        margin: 30px;
+        padding: 15px;
+        position: relative;
+        top: 30px;
+        text-decoration: none;
+        color: snow;
+      }
+      .end .first_st:hover {
+        background-color: #555;
+      }
+      .end .second_st {
+        background-color: #222;
+        color: snow;
+        height: 420px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+        margin: 30px;
+        padding: 15px;
+      }
+      .ch_second_st {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .end .second_st b {
+        font-size: 18px;
+      }
+      .end .second_st p {
+        font-size: 10px;
+        margin: 7px 10px;
+      }
+      .marg {
+        margin: 0px 30px;
+      }
+      .mains {
+        position: relative;
+        left: 50px;
+      }
+    </style>
 
-  }
-  .end .second_st b {
-    font-size: 18px;
-  }
-  .end .second_st p {
-    font-size: 10px;
-    margin: 7px 10px;
-  }
-  .marg {
-    margin: 0px 30px;
-  }
-  .mains {
-    position: relative;
-    left: 50px;
-    }
-</style>
+    <div class="mains">
+      <div class="end">
+        <div class="first_st">
+          <b><span><a href="{% url 'home_page' %}">Back</a></span></b>
+        </div>
 
-<div class="mains">
-    <div class="end">
-      <div class="first_st">
-        <b>Back to top</b>
-      </div>
-  
-      <div class="second_st">
-        <br>
-        <div class="ch_second_st">
-        <div class="marg">
-          <b>Get to Know Us</b>
-          <p>Careers</p>
-          <p>Blog</p>
-          <p>About Amazon</p>
-          <p>Investor Relations</p>
-          <p>Amazon Devices</p>
-          <p>Amazon Science</p>
-        </div>
-  
-        <div>
-          <b>Make Money with Us</b>
-          <p>Sell products on Amazon</p>
-          <p>Sell on Amazon Business</p>
-          <p>Sell apps on Amazon</p>
-          <p>Become an Affiliate</p>
-          <p>Advertise Your Products</p>
-          <p>Self-Publish with Us</p>
-          <p>Host an Amazon Hub</p>
-          <p>›See More Make Money with Us</p>
-        </div>
-        
-        <div>
-          <b>Amazon Payment Products</b>
-          <p>Amazon Business Card</p>
-          <p>Shop with Points</p>
-          <p>Reload Your Balance</p>
-          <p>Amazon Currency Converter</p>
-        </div>
-    
-        <div>
-          <b>Let Us Help You</b>
-          <p>Amazon and COVID-19</p>
-          <p>Your Account</p>
-          <p>Your Orders</p>
-          <p>Shipping Rates & Policies</p>
-          <p>Returns & Replacements</p>
-          <p>Manage Your Content and Devices</p>
-          <p>Amazon Assistant</p>
-          <p>Hello I am Ozodbek and I am create this project.</p>
-        </div>
-  
+        <div class="second_st">
+          <br />
+          <div class="ch_second_st">
+            <div class="marg">
+              <b>Get to Know Us</b>
+              <p>Careers</p>
+              <p>Blog</p>
+              <p>About Amazon</p>
+              <p>Investor Relations</p>
+              <p>Amazon Devices</p>
+              <p>Amazon Science</p>
+            </div>
+
+            <div>
+              <b>Make Money with Us</b>
+              <p>Sell products on Amazon</p>
+              <p>Sell on Amazon Business</p>
+              <p>Sell apps on Amazon</p>
+              <p>Become an Affiliate</p>
+              <p>Advertise Your Products</p>
+              <p>Self-Publish with Us</p>
+              <p>Host an Amazon Hub</p>
+              <p>›See More Make Money with Us</p>
+            </div>
+
+            <div>
+              <b>Amazon Payment Products</b>
+              <p>Amazon Business Card</p>
+              <p>Shop with Points</p>
+              <p>Reload Your Balance</p>
+              <p>Amazon Currency Converter</p>
+            </div>
+
+            <div>
+              <b>Let Us Help You</b>
+              <p>Amazon and COVID-19</p>
+              <p>Your Account</p>
+              <p>Your Orders</p>
+              <p>Shipping Rates & Policies</p>
+              <p>Returns & Replacements</p>
+              <p>Manage Your Content and Devices</p>
+              <p>Amazon Assistant</p>
+              <p>Hello I'm Ozodbek and I'm create this project.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   </body>
 </html>
