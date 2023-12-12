@@ -91,6 +91,10 @@
       .end .first_st:hover {
         background-color: #555;
       }
+      .first_st .back a {
+        text-decoration: none;
+        color: snow;
+      }
       .end .second_st {
         background-color: #222;
         color: snow;
@@ -123,7 +127,7 @@
     <div class="mains">
       <div class="end">
         <div class="first_st">
-          <b><span><a href="{% url 'home_page' %}">Back</a></span></b>
+          <b class="back"><span><a href="{% url 'home_page' %}">Back</a></span></b>
         </div>
 
         <div class="second_st">
